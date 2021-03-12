@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "ibm-watson": "6.0.2"
+    "colors": "^1.4.0",
+    "ibm-watson": "6.0.0"
   }
 }

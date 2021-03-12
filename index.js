@@ -1,33 +1,38 @@
 require('dotenv/config');
-const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1');
+var colors = require('colors');
+const NaturalLanguageClassifierV1 = require('ibm-watson/natural-language-classifier/v1');
 const { IamAuthenticator } = require('ibm-watson/auth');
 
-const naturalLanguageUnderstanding = new NaturalLanguageUnderstandingV1({
-  version: '2020-08-01',
+const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
   authenticator: new IamAuthenticator({
-    apikey: process.env.NLU_API_CODE,
+    apikey: process.env.API_KEY,
   }),
-  serviceUrl: process.env.NLU_URL_CODE,
+  serviceUrl: process.env.URL,
 });
 
-const analyzeParams = {
-  text:
-    'Pokémon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em 1995. Ela é centrada em criaturas ficcionais chamadas "Pokémon"',
-  features: {
-    concepts: {
-      limit: 3,
-    },
-  },
+const classifyCollectionParams = {
+  collection: [
+    { text: 'Gostaria de pagar um boleto, por favor.' },
+    { text: 'Quero ver minhas faltas, vou reprovar?' },
+  ],
+  classifierId: process.env.NLC_MODEL,
 };
 
-naturalLanguageUnderstanding
-  .analyze(analyzeParams)
-  .then((analysisResults) => {
-    console.log('\n', analysisResults.status, analysisResults.statusText);
-    console.log(
-      '\nResultados:\n',
-      JSON.stringify(analysisResults.result, null, 2),
-    );
+naturalLanguageClassifier
+  .classifyCollection(classifyCollectionParams)
+  .then((response) => {
+    const classificationCollection = response.result;
+    console.log('');
+    classificationCollection.collection.forEach((element) => {
+      console.log(
+        'A intenção da frase:',
+        element.text.green,
+        'É da classe:',
+        element.top_class.red + '\n' + 'E tem um score entre 0 a 1 de:',
+        element.classes[0].confidence,
+        '\n',
+      );
+    });
   })
   .catch((err) => {
     console.log('error:', err);

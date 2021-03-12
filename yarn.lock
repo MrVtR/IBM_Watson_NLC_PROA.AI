@@ -34,7 +34,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@types/async@^3.2.5":
+"@types/async@^3.2.1":
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/@types/async/-/async-3.2.5.tgz#febca3166039b8946eb162a14a91e8de9a373ebc"
   integrity sha512-fdtHUdfIxSfU6crUgUOEb6vxdquAOa75bh1sQVL/ePkmQDNo8Aj1056eGGI9cPls5tLRhnAyfoXljEk+hmhbxg==
@@ -80,7 +80,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.33.tgz#9e4f8c64345522e4e8ce77b334a8aaa64e2b6c78"
   integrity sha512-oJqcTrgPUF29oUP8AsUqbXGJNuPutsetaa9kTQAQce5Lx5dTYWV02ScBiT/k1BX/Z7pKeqedmvp39Wu4zR7N7g==
 
-"@types/node@^13.13.39":
+"@types/node@^13.13.4":
   version "13.13.46"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.46.tgz#5471e176f3fa15e018dea7992072bf8ca208a3a6"
   integrity sha512-dqpbzK/KDsOlEt+oyB3rv+u1IxlLFziZu/Z0adfRKoelkr+sTd6QcgiQC+HWq/vkYkHwG5ot2LxgV05aAjnhcg==
@@ -100,7 +100,7 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.0.tgz#fef1904e4668b6e5ecee60c52cc6a078ffa6697d"
   integrity sha512-I99sngh224D0M7XgW1s120zxCt3VYQ3IQsuw3P3jbq5GG4yc79+ZjyKznyOGIQrflfylLgcfekeZW/vk0yng6A==
 
-"@types/websocket@^1.0.1":
+"@types/websocket@^1.0.0":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@types/websocket/-/websocket-1.0.2.tgz#d2855c6a312b7da73ed16ba6781815bf30c6187a"
   integrity sha512-B5m9aq7cbbD/5/jThEr33nUY8WEfVi6A2YKCTOvw5Ldy7mtsOkqRvGjnzy6g7iMMDsgu7xREuCzqATLDLQVKcQ==
@@ -187,7 +187,7 @@ camelcase@^5.3.1:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-camelcase@^6.2.0:
+camelcase@^6.0.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
@@ -232,6 +232,11 @@ color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+colors@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
 
 combined-stream@^1.0.6:
   version "1.0.8"
@@ -385,7 +390,7 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
-ibm-cloud-sdk-core@^2.7.1:
+ibm-cloud-sdk-core@^2.7.0:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/ibm-cloud-sdk-core/-/ibm-cloud-sdk-core-2.8.1.tgz#39af54d197ffa0a4a58b13be43a7cbc89f4e638d"
   integrity sha512-6wMUkuJ8lx1t0LIv7QVTH4A/LrpTHUc70Y91t6QoCQWwOdqbFlDPOALLeDH/+tQOiIVHSuYrX/WvySxfG1Yg4g==
@@ -412,22 +417,22 @@ ibm-cloud-sdk-core@^2.7.1:
     semver "^6.2.0"
     tough-cookie "^4.0.0"
 
-ibm-watson@6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.0.2.tgz#323b7f324164181ca0a676162cc94d30a2546d78"
-  integrity sha512-WBJJD3DQwqSHOAiX27rl7HcWcWXn5fk8GkqEk+XuPqXWZYNqoLtpQa7GCtIvVJvNQHL3dbalJcTyYwzjBn4PKw==
+ibm-watson@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.0.0.tgz#6ffe8b008ac4f69de13584dac91c19b255a342fe"
+  integrity sha512-jycUmtCBaRXtE2x9q5jtPGVM0VifO3fRJ8weXiZSDVX4jYzvld6AKKqfzDhmWWEFiJ8VTfzllUBE6BA7agUI3Q==
   dependencies:
-    "@types/async" "^3.2.5"
+    "@types/async" "^3.2.1"
     "@types/extend" "^3.0.1"
     "@types/isstream" "^0.1.0"
-    "@types/node" "^13.13.39"
-    "@types/websocket" "^1.0.1"
+    "@types/node" "^13.13.4"
+    "@types/websocket" "^1.0.0"
     async "^3.2.0"
-    camelcase "^6.2.0"
+    camelcase "^6.0.0"
     extend "~3.0.2"
-    ibm-cloud-sdk-core "^2.7.1"
+    ibm-cloud-sdk-core "^2.7.0"
     isstream "~0.1.2"
-    websocket "^1.0.33"
+    websocket "^1.0.28"
 
 is-extendable@^1.0.0:
   version "1.0.1"
@@ -771,7 +776,7 @@ utf-8-validate@^5.0.2:
   dependencies:
     node-gyp-build "^4.2.0"
 
-websocket@^1.0.33:
+websocket@^1.0.28:
   version "1.0.33"
   resolved "https://registry.yarnpkg.com/websocket/-/websocket-1.0.33.tgz#407f763fc58e74a3fa41ca3ae5d78d3f5e3b82a5"
   integrity sha512-XwNqM2rN5eh3G2CUQE3OHZj+0xfdH42+OFK6LdC2yqiC0YU8e5UK0nYre220T0IyyN031V/XOvtHvXozvJYFWA==
